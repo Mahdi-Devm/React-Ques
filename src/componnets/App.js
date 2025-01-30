@@ -57,11 +57,12 @@ function Reducer(state, action) {
     case "resat":
       return {
         ...state,
-        status: "raday",
+        status: "active",
         index: 0,
         points: 0,
         ansewr: null,
       };
+
     case "newanswer":
       const question = state.question.at(state.index);
       return {
